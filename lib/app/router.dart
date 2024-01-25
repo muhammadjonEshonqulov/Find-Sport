@@ -17,7 +17,7 @@ abstract final class Routes {
 }
 
 final router = GoRouter(
-  initialLocation: Routes.add_new,
+  initialLocation: Routes.splash,
   routes: [
     GoRoute(
       path: Routes.splash,

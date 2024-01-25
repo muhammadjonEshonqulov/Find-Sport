@@ -32,6 +32,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
       ..forward()
       ..addStatusListener((status) async {
         if (status == AnimationStatus.completed) {
+          // if need check token is exist or not
           router.go(Routes.choose_language);
         }
       });

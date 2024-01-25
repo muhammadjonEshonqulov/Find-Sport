@@ -15,17 +15,10 @@ class SignupBloc extends Bloc<SignupEvent, NetworkResult> {
       emit(const Loading());
 
       try {
-        final loginResult = await loginRepository.login(event.username, event.password);
+        final loginResult = await loginRepository.signup(event.firstname, event.lastname, event.phone, event.password);
         if (loginResult.data?["access_token"] != null) {
-          await cache.setString('token', loginResult.data?["access_token"] ?? "");
-          final meResult = await loginRepository.me(loginResult.data?["access_token"]);
-          await cache.setInt(cache.role, meResult.data?["data"]["user"]["role"]);
-          await cache.setString(cache.username, event.username??"");
-          await cache.setString(cache.password, event.password??"");
-
-          emit(meResult);
-
-          // emit(Success(data: meResult));
+          await cache.setString('token', loginResult.data?["accessToken"] ?? "");
+          emit(loginResult);
         } else
           emit(loginResult);
       } catch (e) {
