@@ -1,0 +1,19 @@
+{
+  "languages": "Языки",
+  "signup": "Ro'yhatdan o'tish",
+  "first_name": "Ism",
+  "enter_first_name": "Ismni kiritish",
+  "last_name": "Familiya",
+  "enter_last_name": "Familiyani kiritish",
+  "phone_number": "Telefon",
+  "enter_phone_number": "Telefonni kiritish",
+  "password": "Parol",
+  "enter_password": "Parolni kiritish",
+  "confirm_password": "Parol takrorlash",
+  "enter_confirm_password": "Parolni qayta kiritish",
+  "save": "Saqlash",
+  "enter_gaps": "Maydonlarni to'ldiring",
+  "passwords_do_not_match": "Parollar mos emas",
+  "add_new_place": "Yangi joy qo'shish"
+
+}

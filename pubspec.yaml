@@ -1,0 +1,64 @@
+name: find_sport
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  easy_localization: ^3.0.2
+  go_router: ^13.0.0
+  bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
+  shared_preferences: ^2.2.2
+  http: ^1.1.0
+  internet_connection_checker: ^1.0.0+1
+  meta: ^1.9.0
+  marquee: ^2.0.2
+  floor: ^1.4.2
+  connectivity: ^3.0.6
+  cupertino_icons: ^1.0.2
+  google_maps_flutter: ^2.0.10
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  floor_generator: ^1.4.2
+  build_runner: ^2.1.2
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/lang/
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/mulish_regular.ttf
+          weight: 400  # FontWeight.w400 is used for bold
+        - asset: assets/fonts/mulish_medium.ttf
+          weight: 500  # FontWeight.w500 is used for medium
+        - asset: assets/fonts/mulish_semi_bold.ttf
+          weight: 600  # FontWeight.w600 is used for semi-bold
+        - asset: assets/fonts/mulish_bold.ttf
+          weight: 700  # FontWeight.w700 is used for bold
+        - asset: assets/fonts/mulish_extra_bold.ttf
+          weight: 800  # FontWeight.w800 is used for extra-bold
+
