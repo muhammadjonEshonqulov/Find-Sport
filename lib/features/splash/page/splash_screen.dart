@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../app/app.dart';
 import '../../../app/router.dart';
-import '../../../common/services/utils/utils.dart';
-import '../../../generated/assets.dart';
-import '../repository/me_repository.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -15,17 +10,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMixin {
-
   @override
   void initState() {
     init();
     super.initState();
   }
 
-
   late AnimationController _animatedController;
   late CurvedAnimation _curvedAnimation;
-
 
   init() {
     _animatedController = AnimationController(duration: const Duration(seconds: 1), vsync: this)
@@ -43,8 +35,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-        child: Container(width: 250, height: 75, child: Image.asset("assets/images/app_logo.png")
-    )
-    ,
-    ));}
+      child: Container(width: 250, height: 75, child: Image.asset("assets/images/app_logo.png")),
+    ));
+  }
 }

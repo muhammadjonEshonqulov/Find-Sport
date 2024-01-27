@@ -19,7 +19,14 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> with Ticker
   String _selectedValue = '';
 
   @override
-  void initState() {
+  void initState()  {
+    // int currentLanguage = await cache.getInt(cache.language) ?? 0;
+    // if (currentLanguage == 0) {
+    //   context.setLocale(Locale('ru'));
+    // } else {
+    //   context.setLocale(Locale('ru'));
+    // }
+    // context.setLocale(Locale('ru'));
     _selectedValue = json[0]['id'];
     super.initState();
   }
@@ -92,7 +99,10 @@ class _ChooseLanguageScreenState extends State<ChooseLanguageScreen> with Ticker
                 ))),
           ])),
       InkWell(
-        onTap: () => {router.go(Routes.signup)},
+        onTap: () => {
+          // router.go(Routes.signup) // may be go
+          router.push(Routes.signup)
+        },
         child: Container(
           margin: EdgeInsets.only(bottom: 110),
           child: Image.asset(

@@ -4,9 +4,10 @@ part of '../block/add_new_bloc.dart';
 abstract class AddNewEvent {}
 
 class AddNewEventData extends AddNewEvent {
-  final String username;
-  final String password;
+  final String title;
+  final String description;
+  final double lot;
+  final double lat;
 
-  AddNewEventData({required this.username, required this.password});
+  AddNewEventData({required this.title, required this.description, required this.lat, required this.lot});
 }
-
