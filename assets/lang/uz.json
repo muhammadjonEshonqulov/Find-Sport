@@ -22,7 +22,9 @@
   "enter_description": "Izohni kiriting",
   "change_location": "Joylashuv o'zgartiring",
   "address_by_location": "Joylashuv bo'yicha manzil",
-  "enter_map_address": "Xarita manziingizni kiriting"
+  "enter_map_address": "Xarita manziingizni kiriting",
+  "successfully_added": "Muvoffaqiyatli qo'shildi"
+
 
 
 }

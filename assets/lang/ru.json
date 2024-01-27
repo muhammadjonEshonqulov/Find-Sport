@@ -21,6 +21,7 @@
   "enter_description": "Введите комментарий",
   "change_location": "Изменить местоположение",
   "address_by_location": "Адрес по местоположению",
-  "enter_map_address": "Введите адрес вашей карты"
+  "enter_map_address": "Введите адрес вашей карты",
+  "successfully_added": "Добавлено успешно"
 
 }
